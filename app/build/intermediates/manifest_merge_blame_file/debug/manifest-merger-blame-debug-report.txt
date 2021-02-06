@@ -1,0 +1,180 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.registrationapps"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:5:5-79
+11-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:6:5-81
+12-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:7:5-67
+13-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.SEND_SMS" />
+14-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:9:5-66
+14-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:9:22-64
+15    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+15-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:10:5-69
+15-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:10:22-67
+16
+17    <!-- Include required permissions for Google Maps API to run. -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:5-79
+18-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:23:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:26:5-28:35
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:27:9-41
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:28:9-32
+23
+24    <application
+24-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:12:5-86:19
+25        android:allowBackup="true"
+25-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:13:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.3.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\ae3468b444d41a56f261ecbb8448fe17\core-1.3.1\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:hardwareAccelerated="false"
+29-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:14:9-44
+30        android:icon="@mipmap/ic_launcher"
+30-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:16:9-43
+31        android:label="@string/app_name"
+31-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:17:9-41
+32        android:largeHeap="true"
+32-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:15:9-33
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:18:9-54
+34        android:supportsRtl="true"
+34-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:19:9-35
+35        android:theme="@style/AppTheme" >
+35-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:20:9-40
+36        <meta-data
+36-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:23:9-111
+37            android:name="com.google.android.geo.API_KEY"
+37-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:23:20-65
+38            android:value="@string/google_maps_api_key" />
+38-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:23:66-109
+39
+40        <!-- Database -->
+41        <activity android:name="com.example.DotaMarketPlace.Database.DisplayDatabase" >
+41-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:26:9-28:20
+41-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:26:19-59
+42        </activity>
+43
+44        <!-- History Form -->
+45        <activity
+45-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:31:9-36:20
+46            android:name="com.example.DotaMarketPlace.History"
+46-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:32:13-36
+47            android:parentActivityName="com.example.DotaMarketPlace.Kontroller.MenuForm" >
+47-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:33:13-62
+48        </activity>
+49
+50        <!-- MenuForm | Top up form -->
+51        <activity
+51-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:39:9-44:20
+52            android:name="com.example.DotaMarketPlace.topUpForm"
+52-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:40:13-38
+53            android:parentActivityName="com.example.DotaMarketPlace.Kontroller.MenuForm" >
+53-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:41:13-62
+54        </activity>
+55
+56        <!-- MenuForm | Seller Location -->
+57        <activity
+57-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:47:9-52:20
+58            android:name="com.example.DotaMarketPlace.SellerLocation"
+58-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:48:13-43
+59            android:parentActivityName="com.example.DotaMarketPlace.buyItem" >
+59-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:49:13-50
+60        </activity>
+61
+62        <!-- MenuForm | Buy item -->
+63        <activity
+63-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:55:9-61:20
+64            android:name="com.example.DotaMarketPlace.buyItem"
+64-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:56:13-36
+65            android:parentActivityName="com.example.DotaMarketPlace.Kontroller.MenuForm"
+65-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:57:13-62
+66            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+66-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:58:13-72
+67        </activity>
+68
+69        <!-- Menu Form -->
+70        <activity android:name="com.example.DotaMarketPlace.Kontroller.MenuForm" >
+70-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:64:9-66:20
+70-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:64:19-54
+71        </activity>
+72
+73        <!-- Register -->
+74        <activity android:name="com.example.DotaMarketPlace.Register" >
+74-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:69:9-71:20
+74-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:69:19-43
+75        </activity>
+76
+77        <!-- Login -->
+78        <activity
+78-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:74:9-85:20
+79            android:name="com.example.DotaMarketPlace.MainActivity"
+79-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:75:13-41
+80            android:label="@string/app_name"
+80-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:76:13-45
+81            android:theme="@style/AppTheme.NoActionBar" >
+81-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:77:13-56
+82            <intent-filter>
+82-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:79:13-83:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:80:17-69
+83-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:80:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:82:17-77
+85-->G:\New_Format_2020\Code\xampp\htdocs\Android Studio\Quizzler\app\src\main\AndroidManifest.xml:82:27-74
+86            </intent-filter>
+87        </activity>
+88        <!-- Needs to be explicitly declared on P+ -->
+89        <uses-library
+89-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+90            android:name="org.apache.http.legacy"
+90-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+91            android:required="false" />
+91-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\9c6b9343dd8321b6c3140ced944e01b5\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+92
+93        <provider
+93-->[com.squareup.picasso:picasso:2.71828] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\ef9ac4025651ac14ae36c50eec39475e\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+94            android:name="com.squareup.picasso.PicassoProvider"
+94-->[com.squareup.picasso:picasso:2.71828] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\ef9ac4025651ac14ae36c50eec39475e\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+95            android:authorities="com.example.registrationapps.com.squareup.picasso"
+95-->[com.squareup.picasso:picasso:2.71828] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\ef9ac4025651ac14ae36c50eec39475e\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+96            android:exported="false" />
+96-->[com.squareup.picasso:picasso:2.71828] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\ef9ac4025651ac14ae36c50eec39475e\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+97
+98        <activity
+98-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\7f48def62482317ff587b8194175eb6e\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+99-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\7f48def62482317ff587b8194175eb6e\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\7f48def62482317ff587b8194175eb6e\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\7f48def62482317ff587b8194175eb6e\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+102
+103        <meta-data
+103-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\62f29465ee5e1d7a7e399d110dee0c9a\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+104            android:name="com.google.android.gms.version"
+104-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\62f29465ee5e1d7a7e399d110dee0c9a\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+105            android:value="@integer/google_play_services_version" />
+105-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\hendy\.gradle\caches\transforms-2\files-2.1\62f29465ee5e1d7a7e399d110dee0c9a\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+106    </application>
+107
+108</manifest>

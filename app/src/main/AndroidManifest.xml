@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.DotaMarketPlace">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_api_key"/>
+
+        <!--   Database -->
+        <activity android:name=".Database.DisplayDatabase">
+
+        </activity>
+
+        <!--   History Form-->
+        <activity
+            android:name=".History"
+            android:parentActivityName=".Kontroller.MenuForm"
+            >
+
+        </activity>
+
+        <!--  MenuForm | Top up form -->
+        <activity
+            android:name=".topUpForm"
+            android:parentActivityName=".Kontroller.MenuForm"
+            >
+
+        </activity>
+
+        <!--  MenuForm | Seller Location-->
+        <activity
+            android:name=".SellerLocation"
+            android:parentActivityName=".buyItem"
+            >
+
+        </activity>
+
+        <!--  MenuForm | Buy item -->
+        <activity
+            android:name=".buyItem"
+            android:parentActivityName=".Kontroller.MenuForm"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            >
+
+        </activity>
+
+        <!-- Menu Form -->
+        <activity android:name=".Kontroller.MenuForm">
+
+        </activity>
+
+        <!--   Register -->
+        <activity android:name=".Register">
+
+        </activity>
+
+        <!-- Login -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

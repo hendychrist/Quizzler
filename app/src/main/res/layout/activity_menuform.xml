@@ -1,0 +1,132 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmz"
+    android:id="@+id/parent_layout"
+    >
+
+    <TextView
+        android:id="@+id/lbDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="serif"
+        android:text="Value"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Balance"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lbDollar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toEndOf="@+id/lbUsername"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/btnRefresh"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/refresh" />
+
+    <ImageView
+    android:id="@+id/imageView3"
+    android:layout_width="12dp"
+    android:layout_height="105dp"
+    android:layout_marginEnd="5dp"
+    android:src="@drawable/dollarrrrr"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/lbDollar"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toEndOf="@+id/textView9"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.01999998"
+    android:visibility="invisible"
+    />
+
+<TextView
+    android:id="@+id/textView9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="96dp"
+    android:layout_marginTop="40dp"
+    android:text="Have a good day!"
+    android:textColor="#D6D6D6"
+    android:textSize="12sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+<TextView
+    android:id="@+id/lbHi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="96dp"
+    android:layout_marginTop="16dp"
+    android:fontFamily="sans-serif-medium"
+    android:text="Hi ,"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+<TextView
+    android:id="@+id/lbUsername"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="124dp"
+    android:layout_marginTop="16dp"
+    android:fontFamily="sans-serif-medium"
+    android:text="Username"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="63dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/finalgirl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songList"
+        android:layout_width="407dp"
+        android:layout_height="542dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

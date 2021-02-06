@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".buyItem"
+    android:background="@drawable/latarbuy"
+    >
+
+    <ImageView
+        android:id="@+id/another_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item name :"
+        android:textColor="@color/blackColor"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="28sp"
+        android:layout_below="@id/another_imageView"
+        />
+
+    <TextView
+        android:id="@+id/stockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Stock : "
+        android:textColor="@color/blackColor"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:layout_marginStart="13dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/titleText"
+        />
+
+    <TextView
+        android:id="@+id/stockValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/stockText"
+        android:fontFamily="sans-serif-light"
+        android:text= "Stock Value"
+        android:layout_marginTop="290dp"
+        android:textColor="@color/blackColor"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price : "
+        android:textColor="@color/blackColor"
+        android:layout_marginStart="20dp"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/stockText"
+        />
+
+    <TextView
+        android:id="@+id/priceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/priceText"
+        android:fontFamily="sans-serif-light"
+        android:text= "Price Value"
+        android:layout_marginTop="330dp"
+        android:textColor="@color/blackColor"
+        android:textSize="28sp"
+        />
+
+    <!--    Show Seller Location -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LLqty">
+
+        <TextView
+            android:id="@+id/lbShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Show Seller Location : "
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="113dp"
+            android:layout_height="50dp"
+            android:text="Show"
+            android:backgroundTint="#4e02eb"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="45px" />
+
+    </LinearLayout>
+
+    <!--     Quantity -->
+    <LinearLayout
+        android:id="@+id/LLqty"
+        android:layout_width="376dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/priceText"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Quantity : "
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            />
+
+        <EditText
+            android:id="@+id/txtQty"
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnTotalPrice"
+            android:layout_width="113dp"
+            android:layout_height="50dp"
+            android:text="Total"
+            android:backgroundTint="#FFFF"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteColor"
+            android:textSize="45px" />
+
+    </LinearLayout>
+
+    <!--    Total Price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLqty"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Total Price : "
+            android:textColor="#FFFF"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:id="@+id/TotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lbTotal"
+            android:fontFamily="sans-serif-light"
+            android:text= "TPrice Value"
+            android:textColor="@color/whiteColor"
+            android:textSize="28sp"
+            />
+
+    </LinearLayout>
+
+    <!--    Buy Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        >
+
+        <Button
+            android:id="@+id/btnBeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:textColor="#89e4f6"
+            android:background="#89e4f6"
+            android:textSize="45px"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/LLqty"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnBac"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/back" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Me Location"
+
+        android:textAllCaps="false"
+        android:textColor="@color/whiteColor"
+        android:textSize="45px"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/mybutton"
+
+        android:layout_below="@+id/LLqty"
+        android:onClick="displayNotification"
+
+        />
+
+
+</RelativeLayout>

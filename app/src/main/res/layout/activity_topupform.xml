@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".topUpForm"
+    android:background="@drawable/backtopup"
+    >
+
+    <TextView
+        android:id="@+id/txtTtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Up"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingTop="3dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtTtotalBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Total Balance : "
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingTop="13dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/txtTtitle"
+        />
+
+    <LinearLayout
+        android:id="@+id/lyUang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTtotalBalance"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtRp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Rp "
+            android:textColor="@color/whiteColor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="85dp"
+            />
+
+        <TextView
+            android:id="@+id/txtTValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" 0,000,000"
+            android:textColor="@color/whiteColor"
+            android:paddingTop="8dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <ImageView
+            android:id="@+id/btnTplus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingBottom="6dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/plusbutton" />
+
+    </LinearLayout>
+
+    <!--    Layout Bawah  -->
+    <RelativeLayout
+        android:id="@+id/hilang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lyUang"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/lbTinsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=" Insert amount of balance :"
+            android:textColor="@color/blackColor"
+            android:paddingTop="80dp"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+
+            />
+
+        <EditText
+            android:id="@+id/txtAmountValue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/lbTinsert"
+            />
+
+        <TextView
+            android:id="@+id/lbTpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text=" Password : "
+            android:textColor="@color/blackColor"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@+id/txtAmountValue"
+            />
+
+        <EditText
+            android:id="@+id/txtTpassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/lbTpassword"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="*******"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnBeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:textColor="@color/whiteColor"
+            android:background="@color/buttonColor"
+            android:textSize="45px"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/txtTpassword"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
